@@ -1,0 +1,16 @@
+"""
+Author: Viernes, Michael
+Submitted to: Mr. Madrigalejos
+Submitted on: Nov. 25
+"""
+
+def main():
+    userinput()
+    # numsorter()
+    # display()
+    
+def userinput():
+    *numlist = input("Please type four numbers with spaces: ")
+    return list(numlist)
+    
+userinput()
