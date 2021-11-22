@@ -94,3 +94,36 @@ def numsorter(sort_list):
         return True
     return [a, b, c, d]
 # End of function.
+
+
+def display(unsort_list, sort_list): # Prints the grade in format.
+    
+    print(
+    """
+    The unsorted list: {0}
+    The sorted list: {1}
+    """.format(unsort_list, sort_list)
+    )
+# End of Func.
+
+def main():
+    unsort_list = userinput()
+    sorted_list = numsorter(unsort_list)
+    if sorted_list == True:
+        print(f"The list {unsort_list} is already sorted.")
+        return
+    display(unsort_list, sorted_list)
+# End of function.
+
+while True: # My template for usual main().
+    main()
+    quit = input("Quit (y/n): ")
+    if quit is type(str):
+        quit = quit.lower()
+        print(quit)
+    if (quit == 'y' or quit == 0):
+        print("Closing...\n")    
+        break
+# End of Func.
+
+exit() # Exits program.
