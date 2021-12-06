@@ -8,18 +8,18 @@ import random
 num_of_pts = 0
 
 for i in range(10): # Loop quesetions
-    x = random.randint(0, 100)
-    y = random.randint(0, 100)
-    sum = x + y
-    print(f"{i+1}. Solve: {x} + {y}?")
+    addend_x = random.randint(0, 100)
+    addend_y = random.randint(0, 100)
+    sum = addend_x + addend_y
+    print(f"{i+1}. Solve: {addend_x} + {addend_y}?")
     try:
-        ans = int(input("Your answer: "))
+        answer = int(input("Your answer: "))
     except:
         print("\nEnter a  correct value.\n")
-    if (ans == sum):
-        print(f"Correct: {x} + {y} = {sum}")
+    if (answer == sum):
+        print(f"Correct: {addend_x} + {addend_y} = {sum}")
         num_of_pts += 1
-    else: print(f"Incorrect: {x} + {y} = {sum}")
+    else: print(f"Incorrect: {addend_x} + {addend_y} = {sum}")
     if i == 9:
         print(f"\nResults: {num_of_pts}/10\n")
         break
