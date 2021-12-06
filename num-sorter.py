@@ -20,82 +20,82 @@ def userinput():
 
 def numsorter(sort_list):
     try:
-        a, b, c, d = [i for i in sort_list]
+        num_1, num_2, num_3, num_4 = [i for i in sort_list]
     except ValueError as e:
         print("You entered incorrectly. Try again.")
         
     # Trying 24 combinations of a set of 4 elements.
     
-    if a > b > c > d:
-        a, b, c, d = a, b, c, d
-    elif a > b > d > c:
-        a, b, c, d = a, b, d, c
-        print("sorted",a,b,c,d)
-    elif a > c > b > d:
-        a, b, c, d = a, c, b, d
-        print("sorted",a,b,c,d)
-    elif a > c > d > b:
-        a, b, c, d = a, c, d, b
-        print("sorted",a,b,c,d)
-    elif a > d > b > c:
-        a, b, c, d = a, d, b, c
-        print("sorted",a,b,c,d)
-    elif a > d > c > b:
-        a, b, c, d = a, d, c, b
-        print("sorted",a,b,c,d)
-    elif b > a > c > d:
-        a, b, c, d = b, a, c, d
-        print("sorted",a,b,c,d)
-    elif b > a > d > c:
-        a, b, c, d = b, a, d, c
-        print("sorted",a,b,c,d)
-    elif b > c > d > a:
-        a, b, c, d = b, c, d, a
-        print("sorted",a,b,c,d)
-    elif b > c > a > d:
-        a, b, c, d = b, c, a, d
-        print("sorted",a,b,c,d)
-    elif b > d > a > c:
-        a, b, c, d = b, d, a, c
-        print("sorted",a,b,c,d)
-    elif b > d > c > a:
-        a, b, c, d = b, d, c, a
-        print("sorted",a,b,c,d)
-    elif c > a > b > d:
-        a, b, c, d = c, a, b, d
-        print("sorted",a,b,c,d)
-    elif c > a > d > b:
-        a, b, c, d = c, a, d, b
-        print("sorted",a,b,c,d)
-    elif c > b > a > d:
-        a, b, c, d = c, b, a, d
-        print("sorted",a,b,c,d)
-    elif c > b > d > a:
-        a, b, c, d = c, b, d, a
-        print("sorted",a,b,c,d)
-    elif c > d > a > b:
-        a, b, c, d = c, d, a, b
-        print("sorted",a,b,c,d)
-    elif c > d > b > a:
-        a, b, c, d = c, d, b, a
-        print("sorted",a,b,c,d)
-    elif d > a > b > c:
-        a, b, c, d = d, a, b, c
-        print("sorted",a,b,c,d)
-    elif d > a > c > b:
-        a, b, c, d = d, a, c, b
-        print("sorted",a,b,c,d)
-    elif d > b > a > c:
-        a, b, c, d = d, b, a, c
-        print("sorted",a,b,c,d)
-    elif d > b > c > a:
-        a, b, c, d = d, b, c, a
-        print("sorted",a,b,c,d)
-    elif d > c > a > b:
-        a, b, c, d = d, c, a, b
+    if num_1 > num_2 > num_3 > num_4:
+        num_1, num_2, num_3, num_4 = num_1, num_2, num_3, num_4
+    elif num_1 > num_2 > num_4 > num_3:
+        num_1, num_2, num_3, num_4 = num_1, num_2, num_4, num_3
+        print("sorted",num_1,num_2,num_3,num_4)
+    elif num_1 > num_3 > num_2 > num_4:
+        num_1, num_2, num_3, num_4 = num_1, num_3, num_2, num_4
+        print("sorted",num_1,num_2,num_3,num_4)
+    elif num_1 > num_3 > num_4 > num_2:
+        num_1, num_2, num_3, num_4 = num_1, num_3, num_4, num_2
+        print("sorted",num_1,num_2,num_3,num_4)
+    elif num_1 > num_4 > num_2 > num_3:
+        num_1, num_2, num_3, num_4 = num_1, num_4, num_2, num_3
+        print("sorted",num_1,num_2,num_3,num_4)
+    elif num_1 > num_4 > num_3 > num_2:
+        num_1, num_2, num_3, num_4 = num_1, num_4, num_3, num_2
+        print("sorted",num_1,num_2,num_3,num_4)
+    elif num_2 > num_1 > num_3 > num_4:
+        num_1, num_2, num_3, num_4 = num_2, num_1, num_3, num_4
+        print("sorted",num_1,num_2,num_3,num_4)
+    elif num_2 > num_1 > num_4 > num_3:
+        num_1, num_2, num_3, num_4 = num_2, num_1, num_4, num_3
+        print("sorted",num_1,num_2,num_3,num_4)
+    elif num_2 > num_3 > num_4 > num_1:
+        num_1, num_2, num_3, num_4 = num_2, num_3, num_4, num_1
+        print("sorted",num_1,num_2,num_3,num_4)
+    elif num_2 > num_3 > num_1 > num_4:
+        num_1, num_2, num_3, num_4 = num_2, num_3, num_1, num_4
+        print("sorted",num_1,num_2,num_3,num_4)
+    elif num_2 > num_4 > num_1 > num_3:
+        num_1, num_2, num_3, num_4 = num_2, num_4, num_1, num_3
+        print("sorted",num_1,num_2,num_3,num_4)
+    elif num_2 > num_4 > num_3 > num_1:
+        num_1, num_2, num_3, num_4 = num_2, num_4, num_3, num_1
+        print("sorted",num_1,num_2,num_3,num_4)
+    elif num_3 > num_1 > num_2 > num_4:
+        num_1, num_2, num_3, num_4 = num_3, num_1, num_2, num_4
+        print("sorted",num_1,num_2,num_3,num_4)
+    elif num_3 > num_1 > num_4 > num_2:
+        num_1, num_2, num_3, num_4 = num_3, num_1, num_4, num_2
+        print("sorted",num_1,num_2,num_3,num_4)
+    elif num_3 > num_2 > num_1 > num_4:
+        num_1, num_2, num_3, num_4 = num_3, num_2, num_1, num_4
+        print("sorted",num_1,num_2,num_3,num_4)
+    elif num_3 > num_2 > num_4 > num_1:
+        num_1, num_2, num_3, num_4 = num_3, num_2, num_4, num_1
+        print("sorted",num_1,num_2,num_3,num_4)
+    elif num_3 > num_4 > num_1 > num_2:
+        num_1, num_2, num_3, num_4 = num_3, num_4, num_1, num_2
+        print("sorted",num_1,num_2,num_3,num_4)
+    elif num_3 > num_4 > num_2 > num_1:
+        num_1, num_2, num_3, num_4 = num_3, num_4, num_2, num_1
+        print("sorted",num_1,num_2,num_3,num_4)
+    elif num_4 > num_1 > num_2 > num_3:
+        num_1, num_2, num_3, num_4 = num_4, num_1, num_2, num_3
+        print("sorted",num_1,num_2,num_3,num_4)
+    elif num_4 > num_1 > num_3 > num_2:
+        num_1, num_2, num_3, num_4 = num_4, num_1, num_3, num_2
+        print("sorted",num_1,num_2,num_3,num_4)
+    elif num_4 > num_2 > num_1 > num_3:
+        num_1, num_2, num_3, num_4 = num_4, num_2, num_1, num_3
+        print("sorted",num_1,num_2,num_3,num_4)
+    elif num_4 > num_2 > num_3 > num_1:
+        num_1, num_2, num_3, num_4 = num_4, num_2, num_3, num_1
+        print("sorted",num_1,num_2,num_3,num_4)
+    elif num_4 > num_3 > num_1 > num_2:
+        num_1, num_2, num_3, num_4 = num_4, num_3, num_1, num_2
     else:
-        return True
-    return [a, b, c, d]
+        return [num_4, num_3, num_2, num_1]
+    return [num_1, num_2, num_3, num_4]
 # End of function.
 
 
